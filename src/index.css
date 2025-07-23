@@ -65,3 +65,9 @@ body {
 .animate-loading-bar {
   animation: loading-bar 1.5s ease-in-out infinite;
 }
+
+
+::selection{
+  background-color: white;
+  color: #000;
+}

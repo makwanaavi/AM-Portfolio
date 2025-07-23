@@ -12,7 +12,9 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white bg-clip-text leading-right">
             Hi, I'm Avi Makwana
           </h1>
-          <img src={Jsimg} alt="JavaScript Logo" width={100} height={100} />
+          <div className="flex justify-start mb-6 right-0">
+            <img src={Jsimg} alt="JavaScript Logo" width={100} height={100}  />
+          </div>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
             I’m a full-stack developer who loves crafting clean, scalable web

@@ -29,7 +29,7 @@ export const About = () => {
           </h2>
 
           <div
-            className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all  hover:-translate-y-1 hover:border-blue-500/30
+            className="rounded-xl p-8 border-white/10 border  transition-all  hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               "
           >
@@ -89,7 +89,7 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1  hover:-translate-y-1 hover:border-blue-500/30
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1  hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               transition-all">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>

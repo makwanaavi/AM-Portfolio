@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import Jsimg from "../../../public/java.png";
 
 export const Home = () => {
   return (
@@ -11,12 +12,14 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white bg-clip-text leading-right">
             Hi, I'm Avi Makwana
           </h1>
+          <img src={Jsimg} alt="JavaScript Logo" width={100} height={100} />
 
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
             I’m a full-stack developer who loves crafting clean, scalable web
             applications. My goal is to build solutions that offer both
             exceptional performance and a delightful user experience.
           </p>
+
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"
@@ -38,4 +41,3 @@ export const Home = () => {
     </section>
   );
 };
-

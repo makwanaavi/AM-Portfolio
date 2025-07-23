@@ -1,18 +1,18 @@
-// "homepage": "https://machadop1407.github.io/pedrotech-portfolio",
 {
-  "name": "beautiful-portfolio",
+  "homepage": "https://makwanaavi.github.io/AM-Portfolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.0.0",
     "emailjs-com": "^3.2.0",
     "react": "^18.3.1",

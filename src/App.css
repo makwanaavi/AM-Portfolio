@@ -1,0 +1,28 @@
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+  @keyframes wave {
+      0% { transform: translateX(0) scaleY(1); }
+      50% { transform: translateX(20%) scaleY(0.8); }
+      100% { transform: translateX(0) scaleY(1); }
+    }
+    npm i @studio-freight/react-lenis
+    .wave-animation {
+      animation: wave 1.5s infinite ease-in-out;
+    }

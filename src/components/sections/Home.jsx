@@ -1,5 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import reactimg from "../../../public/react.svg";
 import Jsimg from "../../../public/java.png";
+import nextjs from "../../../public/next-js.png"; // Ensure the path is correct
 
 export const Home = () => {
   return (
@@ -7,14 +9,33 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
+      {/* Unique positioned JavaScript Logo */}
+      <img
+        src={reactimg}
+        alt="JavaScript Logo"
+        width={280}
+        height={280}
+        className="absolute top-108 left-18 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
+      />
+      <img
+        src={Jsimg}
+        alt="JavaScript Logo"
+        width={250}
+        height={250}
+        className="absolute top-60 right-18 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+      />
+      <img
+        src={nextjs}
+        alt="JavaScript Logo"
+        width={250}
+        height={250}
+        className="absolute top-180 right-140 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
+      />
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white bg-clip-text leading-right">
             Hi, I'm Avi Makwana
           </h1>
-          <div className="flex justify-start mb-6 right-0">
-            <img src={Jsimg} alt="JavaScript Logo" width={100} height={100}  />
-          </div>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
             I’m a full-stack developer who loves crafting clean, scalable web

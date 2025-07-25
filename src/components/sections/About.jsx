@@ -27,8 +27,8 @@ export const About = () => {
         <img
           src={figma}
           alt="Figma Logo"
-          width={250}
-          height={250}
+          width={200}
+          height={200}
           className="absolute top-60 right-230 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
         />
 
@@ -37,7 +37,7 @@ export const About = () => {
           alt="TailwindCSS Logo"
           width={250}
           height={250}
-          className="absolute top-160 left-230 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+          className="absolute top-140 left-230 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
         />
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-white bg-clip-text  text-center">

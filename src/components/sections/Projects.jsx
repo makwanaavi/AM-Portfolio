@@ -1,4 +1,11 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import Html from "../../../public/html.png";
+import CSS from "../../../public/css.png";
+import TailwindCSS from "../../../public/tailwind-css.png";
+import FramerMotion from "../../../public/framer-motion.png";
+import threejs from "../../../public/threejs.svg";
+
+
 
 export const Projects = () => {
   return (
@@ -7,6 +14,21 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
+        <img
+          src={Html}
+          alt="Figma Logo"
+          width={250}
+          height={250}
+          className="absolute top-[-220px] right-160 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        />
+
+        <img
+          src={CSS}
+          alt="TailwindCSS Logo"
+          width={250}
+          height={250}
+          className="absolute top-60 left-270 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        />
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-white bg-clip-text text-center">
             {" "}
@@ -163,6 +185,27 @@ export const Projects = () => {
           </div>
         </div>
       </RevealOnScroll>
+        <img
+          src={TailwindCSS}
+          alt="TailwindCSS Logo"
+          width={250}
+          height={250}
+          className="absolute top-700 right-350 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        />
+         <img
+          src={FramerMotion}
+          alt="FramerMotion Logo"
+          width={250}
+          height={250}
+          className="absolute top-700 right-160 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        />
+         <img
+          src={threejs}
+          alt="threejs Logo"
+          width={250}
+          height={250}
+          className="absolute top-700 right-100 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        />
     </section>
   );
 };

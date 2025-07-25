@@ -15,21 +15,21 @@ export const Home = () => {
         alt="JavaScript Logo"
         width={280}
         height={280}
-        className="absolute top-108 left-18 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
+        className="absolute top-120 left-38 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
       />
       <img
         src={Jsimg}
         alt="JavaScript Logo"
         width={250}
         height={250}
-        className="absolute top-60 right-18 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+        className="absolute top-40 right-38 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
       />
       <img
         src={nextjs}
         alt="JavaScript Logo"
         width={250}
         height={250}
-        className="absolute top-180 right-140 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
+        className="absolute top-190 right-120 z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105"
       />
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
@@ -53,7 +53,7 @@ export const Home = () => {
 
             <a
               href="#contact"
-              className="border border text-white py-3 px-6 rounded font-medium transition-all duration-200 
+              className="border  text-white py-3 px-6 rounded font-medium transition-all duration-200 
              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
             >
               Contact Me

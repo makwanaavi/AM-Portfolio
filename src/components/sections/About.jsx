@@ -21,42 +21,47 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 bg-white text-black relative"
     >
       <RevealOnScroll>
+        {/* Responsive image positions */}
         <img
           src={figma}
           alt="Figma Logo"
-          width={200}
-          height={200}
-          className="absolute top-60 right-230 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+          width={120}
+          height={120}
+          className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+            top-32 right-4 md:top-60 md:right-56
+          "
         />
 
-          <img
+        <img
           src={TailwindCSS}
           alt="TailwindCSS Logo"
-          width={250}
-          height={250}
-          className="absolute top-140 left-230 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+          width={140}
+          height={140}
+          className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+            top-80 left-4 md:top-[35rem] md:left-56
+          "
         />
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-white bg-clip-text  text-center">
+          <h2 className="text-3xl font-bold mb-8 text-black bg-clip-text text-center">
             {" "}
             About Me
           </h2>
 
           <div
-            className="rounded-xl p-8 border-white/10 border  transition-all  hover:-translate-y-1 hover:border-blue-500/30
+            className="rounded-xl p-4 md:p-8 border-white/10 border transition-all hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               "
           >
-            <p className="text-gray-300 mb-6">
+            <p className="text-black mb-6">
               Passionate developer with expertise in building scalable web
               applications and creating innovative solutions.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              <div className="rounded-xl p-4 md:p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
@@ -72,7 +77,7 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-xl p-4 md:p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
@@ -90,14 +95,14 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-8">
             <div
-              className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all  hover:-translate-y-1 hover:border-blue-500/30
+              className="p-4 md:p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               "
             >
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>
                   <strong> B.S. in Computer Science </strong> - XYZ University
                   (2016-2020)
@@ -109,12 +114,12 @@ export const About = () => {
               </ul>
             </div>
             <div
-              className="p-6 rounded-xl border-white/10 border hover:-translate-y-1  hover:border-blue-500/30
+              className="p-4 md:p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:border-blue-500/30
               hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
               transition-all"
             >
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-4 text-gray-700">
                 <div>
                   <h4 className="font-semibold">
                     {" "}

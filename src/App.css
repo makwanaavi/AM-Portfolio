@@ -22,7 +22,6 @@ html.lenis {
       50% { transform: translateX(20%) scaleY(0.8); }
       100% { transform: translateX(0) scaleY(1); }
     }
-    npm i @studio-freight/react-lenis
     .wave-animation {
       animation: wave 1.5s infinite ease-in-out;
     }

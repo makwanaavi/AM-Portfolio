@@ -68,6 +68,6 @@ body {
 
 
 ::selection{
-  background-color: white;
-  color: #000;
+  background-color: black;
+  color: white;
 }

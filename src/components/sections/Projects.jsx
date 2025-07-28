@@ -5,36 +5,39 @@ import TailwindCSS from "../../../public/tailwind-css.png";
 import FramerMotion from "../../../public/framer-motion.png";
 import threejs from "../../../public/threejs.svg";
 
-
-
 export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 text-black bg-white relative"
     >
       <RevealOnScroll>
+        {/* Responsive image positions */}
         <img
           src={Html}
           alt="Figma Logo"
-          width={250}
-          height={250}
-          className="absolute top-[-220px] right-160 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+          width={120}
+          height={120}
+          className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+            top-[-60px] right-2 md:top-[-220px] md:right-40
+          "
         />
 
         <img
           src={CSS}
           alt="TailwindCSS Logo"
-          width={250}
-          height={250}
-          className="absolute top-60 left-270 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
+          width={120}
+          height={120}
+          className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+            top-32 left-2 md:top-60 md:left-64
+          "
         />
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-white bg-clip-text text-center">
+        <div className="max-w-5xl mx-auto px-2 md:px-4">
+          <h2 className="text-3xl font-bold mb-8 text-black bg-clip-text text-center">
             {" "}
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Cloud Platform</h3>
               <p className="text-gray-400 mb-4">
@@ -185,27 +188,34 @@ export const Projects = () => {
           </div>
         </div>
       </RevealOnScroll>
-        <img
-          src={TailwindCSS}
-          alt="TailwindCSS Logo"
-          width={250}
-          height={250}
-          className="absolute top-700 right-350 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
-        />
-         <img
-          src={FramerMotion}
-          alt="FramerMotion Logo"
-          width={250}
-          height={250}
-          className="absolute top-700 right-160 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
-        />
-         <img
-          src={threejs}
-          alt="threejs Logo"
-          width={250}
-          height={250}
-          className="absolute top-700 right-100 z-20 drop-shadow-lg translate-y-3 rotate-12  transition-all duration-4000 ease-in-out hover:scale-105"
-        />
+      {/* Responsive bottom images */}
+      <img
+        src={TailwindCSS}
+        alt="TailwindCSS Logo"
+        width={100}
+        height={100}
+        className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+          bottom-10 right-2 md:top-[700px] md:right-[350px]
+        "
+      />
+      <img
+        src={FramerMotion}
+        alt="FramerMotion Logo"
+        width={100}
+        height={100}
+        className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+          bottom-10 right-28 md:top-[700px] md:right-[160px]
+        "
+      />
+      <img
+        src={threejs}
+        alt="threejs Logo"
+        width={100}
+        height={100}
+        className="absolute z-20 drop-shadow-lg translate-y-3 rotate-12 transition-all duration-4000 ease-in-out hover:scale-105
+          bottom-10 right-52 md:top-[700px] md:right-[100px]
+        "
+      />
     </section>
   );
 };
